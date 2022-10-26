@@ -1,4 +1,4 @@
---1 количество исполнителей в каждом жанре;
+ --1 количество исполнителей в каждом жанре;
 select g."name", count(musicant_id) from musicantgenre m  
 left join genre g on g.id=m.genre_id  group by g."name" 
 
