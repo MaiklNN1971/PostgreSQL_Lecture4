@@ -59,3 +59,4 @@ having count(s.id) = (select count(s.id)  from album a
 	join track   s on s.album_id = a.id 
 	group by a.id order by count(s.id)
 	limit 1)
+ 
